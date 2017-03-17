@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Existing Visitor "
+            android:layout_gravity="center"
+            android:textColor="@color/toolbar"
+            android:textSize="30dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_inner_bg">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="#81ffffff"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+        <TextView
+            android:text="Mobile Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_fname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="76dp"
+            android:textSize="30sp"
+            android:id="@+id/textView_mnumbe" />
+
+        <TextView
+            android:text="First Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:textSize="30sp"
+            android:id="@+id/textView_fname"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView_mnumbe"
+            android:layout_alignStart="@+id/textView_mnumbe" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:padding="@dimen/start_text"
+            android:textCursorDrawable="@drawable/cursor_red"
+            android:id="@+id/editText_mnumbe"
+            android:textSize="24sp"
+            android:background="@color/edit_bacground"
+            android:layout_alignBottom="@+id/textView_mnumbe"
+            android:layout_toRightOf="@+id/textView_mnumbe"
+            android:layout_toEndOf="@+id/textView_mnumbe"
+            android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:background="@color/edit_bacground"
+            android:ems="10"
+            android:padding="@dimen/start_text"
+            android:textCursorDrawable="@drawable/cursor_red"
+            android:textSize="24sp"
+            android:id="@+id/editText_fname"
+            android:layout_alignTop="@+id/textView_fname"
+            android:layout_alignLeft="@+id/editText_mnumbe"
+            android:layout_alignStart="@+id/editText_mnumbe" />
+
+        <Button
+            android:text="SEARCH"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/editText_mnumbe"
+            android:layout_alignLeft="@+id/editText_mnumbe"
+            android:layout_alignStart="@+id/editText_mnumbe"
+            android:textSize="@dimen/btn_search_textsize"
+            android:onClick="searchvisitor1"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/txtcolor_search"
+            android:background="@drawable/btn_search_round"
+            android:id="@+id/button_search" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/photoicon"
+            android:layout_marginTop="96dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:padding="1dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView_search"
+            android:layout_below="@+id/button_search"
+            android:layout_alignLeft="@+id/textView_mnumbe"
+            android:layout_alignStart="@+id/textView_mnumbe" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_search"
+            android:hint="@string/name_hint"
+            android:textSize="30sp"
+            android:layout_alignLeft="@+id/button_search"
+            android:layout_alignStart="@+id/button_search"
+            android:layout_marginBottom="107dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/button_search"
+            android:layout_toEndOf="@+id/button_search"
+            android:textSize="30sp"
+            android:hint="@string/phone_hint"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="57dp"
+            android:id="@+id/textView_phone" />
+
+            <Button
+                android:text="ADD VISIT"
+                android:layout_width="450dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_addlist_round"
+                android:textSize="30dp"
+                android:onClick="goVisitorEntry"
+                android:textColor="@color/txtcolor_search"
+                android:id="@+id/button_addvisit"
+                android:layout_below="@+id/imageView_search"
+                android:layout_alignRight="@+id/textView_phone"
+                android:layout_alignEnd="@+id/textView_phone"
+                android:layout_marginTop="58dp" />
+
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

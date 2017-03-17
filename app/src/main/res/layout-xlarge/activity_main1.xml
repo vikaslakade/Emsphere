@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.seedcommando_6.emspherevms.MainActivity"
+    android:background="@drawable/app_bg">
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:fontFamily="@string/font_family"
+        android:textSize="38sp"
+        android:id="@+id/editText_pass"
+        android:hint="@string/pass_hint"
+        android:paddingLeft="@dimen/start_text"
+        android:gravity="left"
+        android:layout_marginBottom="65dp"
+        android:layout_above="@+id/button_SignIn"
+        android:layout_centerHorizontal="true" />
+
+    <!--<ImageView
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/visitormngmt"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@drawable/visitormngmt"
+        android:layout_above="@+id/editText_uname"
+        android:layout_alignLeft="@+id/editText_uname"
+        android:layout_alignStart="@+id/editText_uname" />-->
+
+    <CheckBox
+        android:text="@string/REMEMBERME"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="242dp"
+        android:id="@+id/checkBox_remeber"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_SignIn"
+        android:layout_alignStart="@+id/button_SignIn" />
+
+    <Button
+        android:text="@string/button_singIn"
+        android:background="@drawable/roundbutton"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:id="@+id/button_SignIn"
+        android:onClick="login"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/checkBox_remeber"
+        android:layout_alignLeft="@+id/editText_pass"
+        android:layout_alignStart="@+id/editText_pass" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/usename_hint"
+        android:ems="10"
+        android:paddingLeft="@dimen/start_text"
+        android:id="@+id/editText_uname"
+        android:fontFamily="@string/font_family"
+        android:gravity="left"
+        android:textSize="38sp"
+            android:layout_marginBottom="38dp"
+            android:layout_above="@+id/editText_pass"
+            android:layout_alignLeft="@+id/editText_pass"
+            android:layout_alignStart="@+id/editText_pass" />
+
+    <TextView
+        android:text="Visitor Management"
+        android:textSize="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_uname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/textView4" />
+
+
+</RelativeLayout>
+
+
+
+
+

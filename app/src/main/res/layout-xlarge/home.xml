@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_inner_bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar_home"
+        android:background="@color/grey" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/VMS"
+            android:layout_gravity="left"
+            android:textColor="@color/toolbar"
+            android:textSize="30sp"/>
+        </android.support.v7.widget.Toolbar>
+
+    <!--<ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_signup"
+        android:layout_marginTop="36dp"
+        android:id="@+id/add_button"
+        android:onClick="OnAddbuttonclick"
+        android:layout_below="@+id/search_button"
+        android:layout_alignLeft="@+id/search_button"
+        android:layout_alignStart="@+id/search_button" />
+-->
+
+    <!-- <ImageButton
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:srcCompat="@drawable/btn_reg_user"
+         android:id="@+id/search_button"
+         android:onClick="OnSearchbuttonclick"
+         android:layout_centerVertical="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/emsphere_logo143"
+        android:id="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/toolbar_home"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/visitormngmt"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />-->
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_btnnew_border"
+        android:id="@+id/add_button"
+        android:onClick="OnAddbuttonclick"
+        android:layout_below="@+id/search_button"
+        android:layout_alignLeft="@+id/search_button"
+        android:layout_alignStart="@+id/search_button"
+        android:layout_marginTop="120dp">
+
+
+        <TextView
+            android:text="Sign Up Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="33dp"
+            android:textSize="36sp"
+            android:layout_marginEnd="33dp"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/textView14"
+            android:layout_alignRight="@+id/textView14"
+            android:layout_alignEnd="@+id/textView14" />
+
+        <Button
+            android:text="Sign Up"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnsignup"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:id="@+id/button"
+            android:layout_below="@+id/textView16"
+            android:layout_alignRight="@+id/textView14"
+            android:layout_alignEnd="@+id/textView14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_new_visitor"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:id="@+id/imageView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="New Visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:id="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_toEndOf="@+id/imageView6" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_btn_border"
+        android:id="@+id/search_button"
+        android:onClick="OnSearchbuttonclick"
+        android:layout_marginTop="128dp"
+        android:layout_below="@+id/welcm"
+        android:layout_alignLeft="@+id/welcm"
+        android:layout_alignStart="@+id/welcm">
+
+
+        <TextView
+            android:text="Registed Visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:id="@+id/textView13"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_registed_visitor"
+            android:id="@+id/imageView5"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Welcome..."
+        android:textSize="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcm"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+</RelativeLayout>

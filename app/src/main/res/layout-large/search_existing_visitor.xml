@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Existing Visitor "
+            android:layout_gravity="center"
+            android:textColor="@color/toolbar"
+            android:textSize="30dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_inner_bg">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#81ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:hint="@string/name_hint"
+                android:fontFamily="@string/font_family"
+            android:textSize="30sp"
+                android:layout_marginLeft="240sp"
+            android:layout_marginBottom="107dp"
+            android:id="@+id/textView3"
+                android:layout_alignTop="@+id/textView_phone" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="130dp"
+            android:textSize="30sp"
+            android:fontFamily="@string/font_family"
+            android:hint="@string/phone_hint"
+            android:id="@+id/textView_phone"
+            android:layout_below="@+id/button_search" />
+
+            <Button
+                android:text="ADD VISIT"
+                android:layout_width="450dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_addlist_round"
+                android:textSize="30dp"
+                android:textColor="@color/txtcolor_search"
+                android:id="@+id/button2"
+                android:onClick="goVisitorEntry"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+            android:text="SEARCH"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+                android:textSize="@dimen/btn_search_textsize"
+            android:onClick="searchvisitor1"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/txtcolor_search"
+            android:background="@drawable/btn_search_round"
+            android:id="@+id/button_search"
+                android:layout_below="@+id/editText_mnumbe"
+                android:layout_alignLeft="@+id/editText_mnumbe"
+                android:layout_alignStart="@+id/editText_mnumbe" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:fontFamily="@string/font_family"
+                android:id="@+id/textView_mnumber"
+                android:layout_alignBaseline="@+id/editText_mnumbe"
+                android:layout_alignBottom="@+id/editText_mnumbe"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2" />
+
+            <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:fontFamily="@string/font_family"
+            android:id="@+id/textView_fname"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView_mnumber"
+                android:layout_alignStart="@+id/textView_mnumber" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:fontFamily="@string/font_family"
+                android:textSize="24sp"
+                android:paddingLeft="@dimen/start_text"
+                android:textCursorDrawable="@drawable/cursor_red"
+                android:id="@+id/editText_mnumbe"
+                android:background="@drawable/edittextborder"
+                android:layout_marginTop="41dp"
+                android:layout_below="@+id/editText_fname"
+                android:layout_alignLeft="@+id/editText_fname"
+                android:layout_alignStart="@+id/editText_fname" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/photoicon"
+                android:id="@+id/imageView_search"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="56dp"
+                android:layout_above="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2" />
+
+            <EditText
+               android:layout_width="300dp"
+               android:layout_height="60dp"
+
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                android:textCursorDrawable="@drawable/cursor_red"
+                 android:background="@drawable/edittextborder"
+                 android:ems="10"
+                android:paddingLeft="@dimen/start_text"
+                android:id="@+id/editText_fname"
+                android:layout_alignTop="@+id/textView_fname"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3" />
+
+        </RelativeLayout>
+      </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

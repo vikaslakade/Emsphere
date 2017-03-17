@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+
+    android:layout_height="270dp"
+    android:layout_marginLeft="10dp"
+    android:background="#ffffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:id="@+id/textView"
+             android:layout_marginTop="30dp"
+            android:textColor="#436EEE"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:hint="data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="26dp"
+            android:textColor="#009900"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginStart="45dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/photoicon"
+            android:id="@+id/imageView3"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="120dp"
+
+        android:background="#009900">
+
+
+       <!-- <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />-->
+
+
+        <!--<TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_alignBaseline="@+id/imageView8"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8" />-->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/textView12"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:text="OK"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:id="@+id/button2"
+            android:textSize="26dp"
+            android:background="#ffffff"
+            android:textColor="#009900"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView8"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icon_tick"
+            android:id="@+id/imageView8"
+            android:layout_marginLeft="120dp"
+
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

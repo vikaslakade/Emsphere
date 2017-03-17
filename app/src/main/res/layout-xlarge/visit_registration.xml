@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.seedcommando_6.emspherevms.VisitorRegistration"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_inner_bg"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1200dp"
+        android:background="#81ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:background="@color/edit_bacground"
+            android:layout_alignLeft="@+id/textView_lname"
+            android:layout_alignStart="@+id/textView_lname"
+            android:id="@+id/editText_mobileno"
+            android:layout_alignTop="@+id/textView_mobileno" />
+
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:background="@drawable/edittextborder"
+            android:id="@+id/editText1_address"
+            android:layout_alignTop="@+id/textView_address"
+            android:layout_alignLeft="@+id/editText_emailid"
+            android:layout_alignStart="@+id/editText_emailid" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:background="@drawable/edittextborder"
+            android:id="@+id/editTextreprenting"
+            android:layout_alignTop="@+id/textView_representing"
+            android:layout_alignLeft="@+id/editText1_address"
+            android:layout_alignStart="@+id/editText1_address" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:background="@drawable/edittextborder"
+            android:id="@+id/editText_remark"
+            android:layout_alignTop="@+id/textView_remark"
+            android:layout_alignLeft="@+id/editTextreprenting"
+            android:layout_alignStart="@+id/editTextreprenting" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+
+            android:background="@drawable/edittextborder"
+            android:id="@+id/editText_lname"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:layout_alignTop="@+id/textView_lname"
+            android:layout_toRightOf="@+id/textView_name"
+            android:layout_toEndOf="@+id/textView_name"
+            android:layout_marginLeft="67dp"
+            android:layout_marginStart="67dp" />
+
+
+        <TextView
+            android:text="Visit Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/search_textsize"
+
+            android:id="@+id/textView_visittype"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/editText_mobileno"
+            android:layout_alignLeft="@+id/textView_mobileno"
+            android:layout_alignStart="@+id/textView_mobileno" />
+
+
+        <TextView
+            android:text="Representing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_representing"
+            android:layout_below="@+id/editText1_address"
+            android:layout_alignLeft="@+id/textView_address"
+            android:layout_alignStart="@+id/textView_address" />
+
+        <TextView
+            android:text="Remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_remark"
+            android:textSize="@dimen/search_textsize"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/editTextreprenting"
+            android:layout_alignLeft="@+id/textView_representing"
+            android:layout_alignStart="@+id/textView_representing" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="450dp"
+            android:layout_height="70dp"
+            android:id="@+id/button_next"
+            android:background="@drawable/btn_addlist_round"
+            android:layout_marginTop="70dp"
+            android:onClick="passdata"
+            android:textSize="30dp"
+            android:textColor="@color/txtcolor_search"
+            android:layout_below="@+id/editText_remark"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:text="Email ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_emailid"
+            android:layout_below="@+id/editText_visittype"
+            android:layout_alignLeft="@+id/textView_visittype"
+            android:layout_alignStart="@+id/textView_visittype"
+            android:layout_marginTop="42dp" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:background="@drawable/edittextborder"
+            android:layout_alignTop="@+id/textView_emailid"
+            android:layout_alignLeft="@+id/editText_visittype"
+            android:layout_alignStart="@+id/editText_visittype"
+            android:id="@+id/editText_emailid" />
+
+        <Spinner
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextborder"
+            android:layout_alignTop="@+id/textView_idcardtype"
+            android:layout_alignLeft="@+id/textView_name"
+            android:layout_alignStart="@+id/textView_name"
+            android:id="@+id/editText_idcardtype" />
+
+        <TextView
+            android:text="ID Card Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_idcardtype"
+            android:layout_below="@+id/editText_emailid"
+            android:layout_alignLeft="@+id/textView_emailid"
+            android:layout_alignStart="@+id/textView_emailid" />
+
+
+
+        <TextView
+            android:text="ID Card Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_idcardnumber"
+            android:textSize="@dimen/search_textsize"
+
+            android:layout_marginTop="39dp"
+            android:layout_below="@+id/editText_idcardtype"
+            android:layout_alignLeft="@+id/textView_idcardtype"
+            android:layout_alignStart="@+id/textView_idcardtype" />
+
+        <TextView
+            android:text="Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_address"
+            android:layout_marginTop="37dp"
+            android:textSize="@dimen/search_textsize"
+            android:layout_below="@+id/textView_idcardnumber"
+            android:layout_alignLeft="@+id/textView_idcardnumber"
+            android:layout_alignStart="@+id/textView_idcardnumber" />
+
+        <TextView
+            android:text="Last Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_lname"
+            android:layout_marginBottom="33dp"
+            android:layout_alignBottom="@+id/imageView_reg"
+            android:layout_toLeftOf="@+id/editText_lname"
+            android:layout_toStartOf="@+id/editText_lname" />
+
+        <TextView
+            android:text="First Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_name"
+            android:layout_alignLeft="@+id/button_next"
+            android:layout_alignStart="@+id/button_next"
+            android:layout_alignTop="@+id/editText_name" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittextborder"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:id="@+id/editText_name"
+            android:layout_alignTop="@+id/imageView_reg"
+            android:layout_alignLeft="@+id/editText_lname"
+            android:layout_alignStart="@+id/editText_lname"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:text="Mobile Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:textSize="@dimen/search_textsize"
+            android:id="@+id/textView_mobileno"
+            android:layout_below="@+id/imageView_reg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/camera"
+            android:padding="1dp"
+            android:layout_gravity="center"
+
+            android:id="@+id/imageView_reg"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView_mobileno"
+            android:layout_alignStart="@+id/textView_mobileno" />
+
+
+        <Spinner
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextborder"
+            android:id="@+id/editText_visittype"
+            android:layout_alignTop="@+id/textView_visittype"
+            android:layout_alignLeft="@+id/editText_mobileno"
+            android:layout_alignStart="@+id/editText_mobileno" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextborder"
+            android:inputType="number"
+            android:ems="10"
+            android:textSize="@dimen/search_textsize"
+            android:paddingLeft="@dimen/start_text"
+            android:id="@+id/editText_idcardnumber"
+            android:layout_alignBaseline="@+id/textView_idcardnumber"
+            android:layout_alignBottom="@+id/textView_idcardnumber"
+            android:layout_alignLeft="@+id/editText1_address"
+            android:layout_alignStart="@+id/editText1_address" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_visitreg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Visitor Registration"
+           android:layout_gravity="center"
+           android:textColor="@color/toolbar"
+           android:textSize="30dp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>

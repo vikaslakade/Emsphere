@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seedcommando_6.emspherevms">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens= "true"
+        android:xlargeScreens= "true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/images"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Login"
+            android:label=" "/>
+        <activity android:name=".Login"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".SearchExistingVisitor"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Home"
+            android:label=" "/>
+        <activity android:name=".VisitorRegistration"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Home"
+            android:label=" "/>
+        <activity android:name=".VisitorEntry"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".VisitorRegistration"
+            android:label=" "/>
+        <activity android:name=".SearchVisitor_details"
+
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SearchExistingVisitor"
+            android:label=" "/>
+
+    </application>
+
+</manifest>

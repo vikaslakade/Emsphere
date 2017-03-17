@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">EmsphereVMS</string>
+    <string name="pass_hint">PassWord</string>
+    <string name="usename_hint">UserName</string>c
+    <string name="button_singIn">SIGN IN</string>
+    <string name="Welcome">Welcome,#8230</string>
+    <string name="REMEMBERME">REMEMBER ME</string>
+    <string name="name_hint">name</string>
+    <string name="phone_hint">phone</string>
+    <string name="Person_to_meet">Person To Meet</string>
+    <string name="Visit_Purpose">Visit Purpose</string>
+    <string name="Time">Time</string>
+    <string name="Duration">Duration</string>
+    <string name="Area">Area</string>
+    <string name="Material_no.1">Material 01</string>
+    <string name="Serial_no.1">Serial No.01</string>
+    <string name="Material_no.2">Material 02</string>
+    <string name="Serial_no.2">Serial No.02</string>
+    <string name="Submit">Submit</string>
+    <string name="Name">Name</string>
+    <string name="MobileNo">Mobile No.</string>
+    <string name="visitentrydetail">Visit Entry Details</string>
+    <string name="dummy_icon">Dummy_Icon</string>
+    <string name="phone_icon">phone_icon</string>
+    <string name="VMS">VMS</string>
+
+    <string name="submit">Submit</string>
+    <string name="button_text"><font size="20">New Register!</font>\n\<font size="10">Sign in Now!</font></string>
+
+    <string-array name="visittype">
+
+        <item><font size="24" >Employee</font></item>
+        <item><font size="24">Interviewee</font></item>
+        <item><font size="24">security</font></item>
+        <item><font size="24">other</font></item>
+        <item><font size="24" color="#d3d3d3">please select visittype</font></item>
+    </string-array>
+
+    <string-array name="visitid">
+
+        <item><font size="24">Pancard</font></item>
+        <item><font size="24">Aadhar Card</font></item>
+        <item><font size="24">Voter Card</font></item>
+        <item><font size="24">other</font></item>
+        <item><font size="24"  color="#d3d3d3">please select ID</font></item>
+    </string-array>
+
+</resources>
